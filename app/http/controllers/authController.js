@@ -3,6 +3,12 @@ const bcrypt = require('bcrypt');
 const passport = require('passport');
 
 function authController(){
+ 
+    /*  if user is admin then only redirect to (/admin/orders) 
+           page (as it created for admin authentication) 
+        else return user to the home.ejs page
+    */
+    
     const _getRedirectUrl = (req) =>{
         return req.user.role === 'admin' ? '/admin/orders' : '/'
     }
@@ -14,21 +20,25 @@ function authController(){
          postlogin(req,res,next){
             
             const {email, password} =req.body
-            // validation request
+            /* validation request for login */
              if(!email || !password){
+            // if fails to login then give error msg         
                 req.flash('error', 'All fields are required')
                 return res.redirect('/register')
             }
-           
+             /* validation for different authenticate possiblities */          
             passport.authenticate('local', (err,user, info)=>{
+            // if something wrong            
                if(err){
                    req.flash('error',info.message)
                    return next(err)
-               }
+               } 
+             // if not user
                if(!user){
                    req.flash('error', info.message)
                    return res.redirect('/login')
                }
+             // login when user auth details are correct else throe error
                req.login(user,  (err)=>{
                    if(err){
                        req.flash('error',info.message)
@@ -62,8 +72,7 @@ function authController(){
                     return res.redirect('/register')
                 }
             })
-
-            // hashed password
+            // hashed password (bcrypt)(10 mould password)=> cann't easy to dcrypt 
             const hasedPassword = await bcrypt.hash(password, 10)
 
             // Create a user
