@@ -2,7 +2,20 @@
 
 # images of product 
 
-(created with help of EJS template engine and CSS framework(Tailwind Css).
+Pages are created with help of EJS template engine and CSS framework(Tailwind Css).
+
+This website consist of Authentication using encrypted password (bycrpt.js lib),
+SESSIONS, TOCKENS, SOCKET.IO, 
+
+* This project also have Webpack (larvel.mix) which make this project 
+  compatable to the with different browser
+
+# To use it following steps can be processed
+
+1 Install all dependancies with yarn as package manager (if you are comfortable to install dependancies it with npm manager then also their is no issue.)  
+2 Carefully install Webpack (https://laravel-mix.com/docs/4.0/installation) because sometime due to verions it producing issues.
+3 After installation type (nodemon server.js) in terminal to run the server.
+4 And also run (yarn watch) in new terminal to  run webpack.
 
 # MENU PAGE IMAGE
 
