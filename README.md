@@ -23,10 +23,14 @@ The project has two parts
 
 # To use it following steps can be proceed
 
- 1 Install all dependencies with yarn as the package manager. 
+ 1 Install all dependencies with yarn as the package manager.
+ 
  2 Correctly install Webpack (https://laravel-mix.com/docs/4.0/installation) because sometimes because versions it producing issues.
+ 
  3 After install an application type (nodemon server.js) in the terminal to run the server.
+ 
  4  Connect your Database to your project where and make secrete key in the .env file. 
+ 
  5 And also run (yarn watch) in a new terminal to run webpack.
 
 # Images of  application 
