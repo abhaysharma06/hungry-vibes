@@ -12,24 +12,23 @@ The project has two parts
 2 User panel
  * Many pages created were for users like cart page, home, offers, login,    order details, tracking Id pages.
  * Token id generated for every user is unique that stores every detail of the user.
- * Pages created using the EJS template engine and CSS framework(Tailwind CSS), this application consists of Authentication using the 
-   encrypted password (bycrpt.js lib), SESSIONS, TOKENS, SOCKET.IO, Moment (for time), etc...
+ * Pages created using the EJS template engine and CSS framework(Tailwind CSS), this application consists of Authentication using the encrypted password (bycrpt.js lib), SESSIONS, TOKENS, SOCKET.IO, Moment (for time), etc...
 
-# Additional features of application
- * This project also has Webpack (larval. mix)
+# Additional features of the application
+ * This project also has Webpack (Laravel Mix)
  * Webpack helps make the application compatible with the browser.
  * Whenever each user login they generate a session for the user and store the details in the database.
  * Without Authentication (Registration/Login), no user can place an order.
 
-# To use it following steps can be proceed
+# Following are the steps to proceed application
 
  1 Install all dependencies with yarn as the package manager.
  
  2 Correctly install Webpack (https://laravel-mix.com/docs/4.0/installation) because sometimes because versions it producing issues.
  
- 3 After install an application type (nodemon server.js) in the terminal to run the server.
+ 3 Connect your Database to your project where and make secrete key in the .env file.
  
- 4  Connect your Database to your project where and make secrete key in the .env file. 
+ 4 After install an application type (nodemon server.js) in the terminal to run the server.
  
  5 And also run (yarn watch) in a new terminal to run webpack.
 
