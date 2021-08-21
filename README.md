@@ -2,9 +2,19 @@
  
 # Description of project
 
+Project have to sections 
+1 Admin pannel
+  * Some page are their in application which can only access by admin while logged in to the given adminID access.
+  * Admin have access to update order details.
+2 User pannel
+  * Many pages are cretaed for user like cart page, home, offer, login, order details, tracking Id pages.
+  * Unique token id generated for every single order of user store in user orders pages.
+ 
 Pages are created with help of EJS template engine and CSS framework(Tailwind Css), This website consist of Authentication using encrypted password (bycrpt.js lib),
-SESSIONS, TOCKENS, SOCKET.IO, Momment (for time), and etc.. 
+SESSIONS, TOKENS, SOCKET.IO, Momment (for time), and etc.. 
 * This project also have Webpack (larvel.mix) which make this project compatable to the with different browser with any verion.
+* whenever each user login thier generate a session for the user and store the details in database.
+* Without Authentication (Registration/Login) no single order can be placed.
 
 # To use it following steps can be processed
 
@@ -38,5 +48,5 @@ SESSIONS, TOCKENS, SOCKET.IO, Momment (for time), and etc..
 
 * there clearly showing that the password are stored in encrpyted form using bycrpt.js (10 mould password),
   encrypted password cann't get dcrypted for comparing details while login.
-
+  
 ![Screenshot (670)](https://user-images.githubusercontent.com/74869287/130317453-98aca5c7-0124-403b-81c9-9099efa3bb06.png)
