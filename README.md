@@ -2,10 +2,12 @@
  
 # Description of project
 
-Project have to sections 
+Project have to sections
+
 1 Admin pannel
   * Some page are their in application which can only access by admin while logged in to the given adminID access.
   * Admin have access to update order details.
+
 2 User pannel
   * Many pages are cretaed for user like cart page, home, offer, login, order details, tracking Id pages.
   * Unique token id generated for every single order of user store in user orders pages.
