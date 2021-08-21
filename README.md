@@ -9,7 +9,7 @@ The project has two parts
  * Admin has access to update order details.
  * Admin can auth use the fixed username to get logged in.
  
-2 User pannel
+2 User panel
  * Many pages created were for users like cart page, home, offers, login,    order details, tracking Id pages.
  * Token id generated for every user is unique that stores every detail of the user.
  * Pages created using the EJS template engine and CSS framework(Tailwind CSS), this application consists of Authentication using the 
