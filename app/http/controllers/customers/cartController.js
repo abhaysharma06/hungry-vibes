@@ -22,9 +22,11 @@ function cartController(){
                 }
             }
             let cart = req.session.cart
-            //console.log(req.body);
-                // check if items does not exist in cart
-            
+          
+             /* 
+                   checking if the item doesn't exit in the cart, 
+                   then add them otherwise increase its quantity by one
+              */
                 if(!cart.items[req.body._id]){
                     cart.items[req.body._id]={
                         items : req.body,
