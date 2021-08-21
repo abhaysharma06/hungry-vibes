@@ -47,7 +47,7 @@ app.use(session({
      resave: false,
      store: mongoStore,
      saveUninitialized: false,
-     cookie:{maxAge: 1000 * 60 * 60 * 24} //24 housr valid
+     cookie:{maxAge: 1000 * 60 * 60 * 24} //24 hours valid
 }))
 
  //passport import config
@@ -81,7 +81,7 @@ app.set('view engine', 'ejs')
 require('./routes/web.js')(app)
 
 
-//to listen the server
+//to listen the server PORT
 const server = app.listen(PORT, ()=>{
    console.log(`Server listen at ${PORT}`)
 });

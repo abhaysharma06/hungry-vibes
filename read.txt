@@ -1,6 +1,7 @@
 - Dependancies
     - express
-    - ejs express-ejs-layout
+    - ejs 
+    - express-ejs-layout
     - Dev dependancies
     - nodemon
     - express-flash 
