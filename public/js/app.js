@@ -1856,19 +1856,29 @@ __webpack_require__.r(__webpack_exports__);
 
 function initAdmin(socket) {
   var orderTableBody = document.querySelector('#orderTableBody');
-  var orders = [];
-  var markup;
+  var orders = []; // array of orders
+
+  var markup; // table markup
+
+  /* calling get method for 
+  axios to send http request */
+
   axios__WEBPACK_IMPORTED_MODULE_0___default().get('/admin/orders', {
     headers: {
       "X-Requested-With": "XMLHttpRequest"
     }
   }).then(function (res) {
+    // storing data in order array
     orders = res.data;
     markup = generateMarkup(orders);
     orderTableBody.innerHTML = markup;
   })["catch"](function (err) {
     console.log(err);
   });
+  /*  
+      renders all the items in order collection 
+      (array) present at database in for of table 
+  */
 
   function renderItems(items) {
     var parsedItems = Object.values(items);
@@ -1876,12 +1886,26 @@ function initAdmin(socket) {
       return "\n                <p>".concat(menuItem.items.name, " - ").concat(menuItem.qty, " pcs </p>\n            ");
     }).join('');
   }
+  /* 
+      calling a map function which finally returns 
+      object array in form of table. 
+  */
+
 
   function generateMarkup(orders) {
     return orders.map(function (order) {
-      return "\n                <tr>\n                <td class=\"border px-4 py-2 text-green-900\">\n                    <p>".concat(order._id, "</p>\n                    <div>").concat(renderItems(order.items), "</div>\n                </td>\n            \n                <td class=\"border px-4 py-2\">").concat(order.phone, "</td>\n                <td class=\"border px-4 py-2\">").concat(order.address, "</td>\n                <td class=\"border px-4 py-2\">\n                    <div class=\"inline-block relative w-64\">\n                        <form action=\"/admin/order/status\" method=\"POST\">\n                            <input type=\"hidden\" name=\"orderId\" value=\"").concat(order._id, "\">\n                            <select name=\"status\" onchange=\"this.form.submit()\"\n                                class=\"block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline\">\n                                <option value=\"order_placed\"\n                                    ").concat(order.status === 'order_placed' ? 'selected' : '', ">\n                                    Placed</option>\n                                <option value=\"confirmed\" ").concat(order.status === 'confirmed' ? 'selected' : '', ">\n                                    Confirmed</option>\n                                <option value=\"prepared\" ").concat(order.status === 'prepared' ? 'selected' : '', ">\n                                    Prepared</option>\n                                <option value=\"delivered\" ").concat(order.status === 'delivered' ? 'selected' : '', ">\n                                    Delivered\n                                </option>\n                                <option value=\"completed\" ").concat(order.status === 'completed' ? 'selected' : '', ">\n                                    Completed\n                                </option>\n                            </select>\n                        </form>\n                        <div\n                            class=\"pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700\">\n                            <svg class=\"fill-current h-4 w-4\" xmlns=\"http://www.w3.org/2000/svg\"\n                                viewBox=\"0 0 20 20\">\n                                <path\n                                    d=\"M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z\" />\n                            </svg>\n                        </div>\n                    </div>\n                </td>\n                <td class=\"border px-4 py-2\">\n                    ").concat(moment__WEBPACK_IMPORTED_MODULE_1___default()(order.createdAt).format('hh:mm A'), "\n                </td>\n                <td class=\"border px-4 py-2\">\n                    ").concat(order.paymentStatus ? 'paid' : 'Not paid', "\n                </td>\n            </tr>\n        ");
+      /* 
+           displaying details order details in a table 
+           where admin can update the status (the applies a ternary condition to change status)
+      */
+      return "\n                <tr>\n                <td class=\"border px-4 py-2 text-green-900\">\n                    <p>".concat(order._id, "</p>\n                    <div>").concat(renderItems(order.items), "</div>\n                </td>\n            \n                <td class=\"border px-4 py-2\">").concat(order.phone, "</td>\n                <td class=\"border px-4 py-2\">").concat(order.address, "</td>\n                <td class=\"border px-4 py-2\">\n                    <div class=\"inline-block relative w-64\">\n                        <form action=\"/admin/order/status\" method=\"POST\">\n                            <input type=\"hidden\" name=\"orderId\" value=\"").concat(order._id, "\">\n                            <select name=\"status\" onchange=\"this.form.submit()\"\n                                class=\"block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline\">\n                                <option value=\"order_placed\"   \n                                    ").concat(order.status === 'order_placed' ? 'selected' : '', ">\n                                    Placed</option>\n                                <option value=\"confirmed\" ").concat(order.status === 'confirmed' ? 'selected' : '', ">\n                                    Confirmed</option>\n                                <option value=\"prepared\" ").concat(order.status === 'prepared' ? 'selected' : '', ">\n                                    Prepared</option>\n                                <option value=\"delivered\" ").concat(order.status === 'delivered' ? 'selected' : '', ">\n                                    Delivered\n                                </option>\n                                <option value=\"completed\" ").concat(order.status === 'completed' ? 'selected' : '', ">\n                                    Completed\n                                </option>\n                            </select>\n                        </form>\n                        <div\n                            class=\"pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700\">\n                            <svg class=\"fill-current h-4 w-4\" xmlns=\"http://www.w3.org/2000/svg\"\n                                viewBox=\"0 0 20 20\">\n                                <path\n                                    d=\"M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z\" />\n                            </svg>\n                        </div>\n                    </div>\n                </td>\n                <td class=\"border px-4 py-2\">\n                    ").concat(moment__WEBPACK_IMPORTED_MODULE_1___default()(order.createdAt).format('hh:mm A'), "\n                </td>\n                <td class=\"border px-4 py-2\">\n                    ").concat(order.paymentStatus ? 'paid' : 'Not paid', "\n                </td>\n            </tr>\n        ");
     }).join('');
   }
+  /* 
+      whenever customer generate order there comes 
+      a notification of order(using Noty) to admin.
+   */
+
 
   socket.on('orderPlaced', function (order) {
     new (noty__WEBPACK_IMPORTED_MODULE_2___default())({
@@ -1922,22 +1946,30 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
+ // gets all the buttons in form of array from the class add to cart in home.ejs
 
 var addToCart = document.querySelectorAll('.add-to-cart');
 var cartCounter = document.querySelector(".cartCount"); // it is used to send the responce 
 
 function updateCart(juices) {
+  // ajax call
+
+  /* Axios: a javascript library used to make http request from node.  */
   axios__WEBPACK_IMPORTED_MODULE_0___default().post('/update-cart', juices).then(function (res) {
-    cartCounter.innerText = res.data.totalQty;
+    cartCounter.innerText = res.data.totalQty; // it shows notification for add items
+
     new (noty__WEBPACK_IMPORTED_MODULE_1___default())({
       type: 'success',
+      // if success then green color notification occur
       timeout: 1000,
       text: 'Item added to cart',
       progressBar: false,
       layout: 'topLeft'
-    }).show();
+    }).show(); // display the notification
   })["catch"](function (err) {
+    // when there occur prblm in ordering then 
     new (noty__WEBPACK_IMPORTED_MODULE_1___default())({
+      // red color notifaction occur while show "somthing went wrong"
       type: 'error',
       timeout: 1000,
       text: 'something went wrong',

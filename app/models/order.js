@@ -2,7 +2,17 @@ const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema
 
+    /* creted schema for order page where  
+      customer details are taken */
+    /*
+        schema created for menu page 
+        *** the item which is neccessary can
+         be written by required : true ***
+    */
+
+    
 const orderSchema = new Schema({
+    // customerId is different for every user  
     customerId:{ type: mongoose.Schema.Types.ObjectId,
                  ref: 'User',
                  required: true
@@ -29,6 +39,8 @@ const orderSchema = new Schema({
     }    
 
 },{timestamps:true})
+
+/* creates a model of orderschema as Order which use for export */
 
 const Order = mongoose.model('Order',orderSchema)
 

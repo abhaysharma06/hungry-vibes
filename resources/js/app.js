@@ -3,22 +3,27 @@ import Noty from 'noty'
 import initAdmin  from './admin'
 import moment from 'moment'
 
+// gets all the buttons in form of array from the class add to cart in home.ejs
 let addToCart = document.querySelectorAll('.add-to-cart')
 let cartCounter = document.querySelector(".cartCount")
 
 // it is used to send the responce 
 function updateCart(juices){
+
+    // ajax call
+    /* Axios: a javascript library used to make http request from node.  */
       axios.post('/update-cart', juices).then(res=>{
           cartCounter.innerText = res.data.totalQty
+          // it shows notification for add items
           new Noty({
-              type: 'success',
+              type: 'success',          // if success then green color notification occur
               timeout:1000,
               text:'Item added to cart',
               progressBar: false,
               layout: 'topLeft',
-          }).show()
-        }).catch(err=>{
-            new Noty({
+          }).show()           // display the notification
+        }).catch(err=>{       // when there occur prblm in ordering then 
+            new Noty({        // red color notifaction occur while show "somthing went wrong"
                 type: 'error',
                 timeout:1000,
                 text:'something went wrong',

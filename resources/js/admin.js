@@ -5,21 +5,28 @@ import Noty from 'noty'
 
 export default function initAdmin(socket) {
     const orderTableBody = document.querySelector('#orderTableBody')
-    let orders = []
-    let markup
+    let orders = []   // array of orders
+    let markup        // table markup
 
+    /* calling get method for 
+    axios to send http request */
+    
     axios.get('/admin/orders', {
         headers: {
             "X-Requested-With": "XMLHttpRequest"
         }
     }).then(res => {
+        // storing data in order array
         orders = res.data
         markup = generateMarkup(orders)
         orderTableBody.innerHTML = markup
     }).catch(err => {
         console.log(err)
     })
-
+    /*  
+        renders all the items in order collection 
+        (array) present at database in for of table 
+    */
     function renderItems(items) {
         let parsedItems = Object.values(items)
         return parsedItems.map((menuItem) => {
@@ -29,8 +36,17 @@ export default function initAdmin(socket) {
         }).join('')
       }
 
+      /* 
+          calling a map function which finally returns 
+          object array in form of table. 
+      */
     function generateMarkup(orders) {
         return orders.map(order => {
+        
+            /* 
+                 displaying details order details in a table 
+                 where admin can update the status (the applies a ternary condition to change status)
+            */
             return `
                 <tr>
                 <td class="border px-4 py-2 text-green-900">
@@ -46,7 +62,7 @@ export default function initAdmin(socket) {
                             <input type="hidden" name="orderId" value="${ order._id }">
                             <select name="status" onchange="this.form.submit()"
                                 class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
-                                <option value="order_placed"
+                                <option value="order_placed"   
                                     ${ order.status === 'order_placed' ? 'selected' : '' }>
                                     Placed</option>
                                 <option value="confirmed" ${ order.status === 'confirmed' ? 'selected' : '' }>
@@ -81,6 +97,11 @@ export default function initAdmin(socket) {
         `
         }).join('')
     }
+
+    /* 
+        whenever customer generate order there comes 
+        a notification of order(using Noty) to admin.
+     */
     socket.on('orderPlaced', (order) => {
         new Noty({
             type: 'success',

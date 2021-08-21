@@ -4,7 +4,7 @@
               <div class="py-8 px-20 w-1/2">
                 <h6 class="text-lg py-4"><em> Are you thristy.....?</em></h6>      
                 <h1 class="text-6xl font-bold">Lets Drink It</h1>
-                  
+    
                <button class="px-6 py-2 rounded-full text-white font-bold mt-4 btn-primary">Order Now</button>
                 </div>
               <div class="wt-1/2">
@@ -13,10 +13,14 @@
          </div>
     </section>
 
-<!----------------orders------------section-------------------->
+<!--------**********orders-section**********----------->
      <section class="menu container px-12 py-8">
          <h1 class="text-xl font-bold mb-8">All Jucies</h1>
          <div class="grid gap-x-12 gap-y-16 grid-cols-4">
+             
+            <!--information of jucies fetching from database 
+                  like => image, name , size , price 
+                which displaying on page --> 
              <% juices.forEach(function(juices){ %>
 
                 <div class="w-64">
@@ -29,6 +33,7 @@
                             <button data-juices="<%= JSON.stringify(juices) %>" class="add-to-cart py-1 px-6 rounded-full flex items-center">
                                 <span>+</span>
                                 <span class="ml-4">Add</span>
+                                
                             </button>
                         </div>
                     </div>
