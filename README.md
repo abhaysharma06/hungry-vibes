@@ -1,21 +1,20 @@
 # Juice_Ordering_System
+ 
+# Description of project
 
-# images of product 
-
-Pages are created with help of EJS template engine and CSS framework(Tailwind Css).
-
-This website consist of Authentication using encrypted password (bycrpt.js lib),
-SESSIONS, TOCKENS, SOCKET.IO, 
-
-* This project also have Webpack (larvel.mix) which make this project 
-  compatable to the with different browser
+Pages are created with help of EJS template engine and CSS framework(Tailwind Css), This website consist of Authentication using encrypted password (bycrpt.js lib),
+SESSIONS, TOCKENS, SOCKET.IO, Momment (for time), and etc.. 
+* This project also have Webpack (larvel.mix) which make this project compatable to the with different browser with any verion.
 
 # To use it following steps can be processed
 
 1 Install all dependancies with yarn as package manager (if you are comfortable to install dependancies it with npm manager then also their is no issue.)  
 2 Carefully install Webpack (https://laravel-mix.com/docs/4.0/installation) because sometime due to verions it producing issues.
 3 After installation type (nodemon server.js) in terminal to run the server.
+4 Also connect your Database to the your project where and make secrete key in .env file. 
 4 And also run (yarn watch) in new terminal to  run webpack.
+
+# images of product
 
 # MENU PAGE IMAGE
 
@@ -31,3 +30,13 @@ SESSIONS, TOCKENS, SOCKET.IO,
 
 ![Screenshot (663)](https://user-images.githubusercontent.com/74869287/130316732-840a13b6-1f02-4653-a429-b37cb338dc6d.png)
 
+# MONGODB COLLECTION USED IN PROJECT
+
+![Screenshot (671)](https://user-images.githubusercontent.com/74869287/130317439-0f21a200-3ad5-4355-8f33-817553c875dd.png)
+
+# USER COLLECTION DETAILS 
+
+* there clearly showing that the password are stored in encrpyted form using bycrpt.js (10 mould password),
+  encrypted password cann't get dcrypted for comparing details while login.
+
+![Screenshot (670)](https://user-images.githubusercontent.com/74869287/130317453-98aca5c7-0124-403b-81c9-9099efa3bb06.png)
