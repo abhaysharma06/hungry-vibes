@@ -1,0 +1,33 @@
+- Dependancies
+    - express
+    - ejs 
+    - express-ejs-layout
+    - Dev dependancies
+    - nodemon
+    - express-flash 
+    
+
+-Laravel Mix
+    - setup js and scss
+
+
+- connect to mongo db
+- use connect-mongo for session store
+    - dependancies
+        - mongoose, express-session, connect-mongo, dotenv
+
+- axios 
+    -to send ajax request
+   
+ -noty
+    -notification-library
+
+
+
+- Build login using passport
+    - dependancies :
+        -passport passport-local express-session
+
+- Order tracker
+    - Socket connection
+        - dependancies socket.io
