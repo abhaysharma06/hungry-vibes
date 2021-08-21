@@ -3,9 +3,11 @@
          <h1 class="font-bold text-lg mb-4 px-8">All orders</h1>
          <% if(messages.success) { %>
          <div id="success-alert" class="flex items-center bg-green-500 text-white text-sm font-bold px-4 py-3" role="alert">
+      <!-- *******a msg apper when order is succuss, which when disapper in some time********* -->
         <p><%= messages.success%> 😊</p>    
     </div>        
     <% } %>
+     <!-- contains all the order details in table -->
          <table class="w-full tabel-auto bg-white">
              <thead>
                  <tr>
