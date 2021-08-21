@@ -3,10 +3,12 @@
 # Description of project
 
 The project has two parts
+
 1 Admin panel
  * Only admin can access the pages whom roles decide to admin. 
  * Admin has access to update order details.
  * Admin can auth use the fixed username to get logged in.
+ 
 2 User pannel
  * Many pages created were for users like cart page, home, offers, login,    order details, tracking Id pages.
  * Token id generated for every user is unique that stores every detail of the user.
@@ -27,7 +29,7 @@ The project has two parts
  4  Connect your Database to your project where and make secrete key in the .env file. 
  5 And also run (yarn watch) in a new terminal to run webpack.
 
-# Images of applictions 
+# Images of  application 
 
 # MENU PAGE 
 
