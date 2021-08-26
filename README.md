@@ -139,9 +139,15 @@ The project has two parts
     yarn add Noty
     yarn add moment
 ```
-## Steps To Use
- 1 Install all Dependancies 
- 2 Setup [Larvel Mix](https://laravel-mix.com/docs/4.0/installation)
- 3 Connect you Databse to projec
+## 🔧 Steps To Use
+ 1 Install all Dependancies.
+ 
+ 2 Setup [Larvel Mix](https://laravel-mix.com/docs/4.0/installation) properly.
+ 
+ 3 Connect you Databse to project.
+ 
    * Create a file name it .env like ➡️ [example.env](https://github.com/codeforgrow/Juice_Ordering_System/blob/main/example.env) 
- 4 
+ 
+ 4 Run nodemon server.js in one terminal.
+ 
+ 5 Run yarn watch in another terminal.
