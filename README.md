@@ -5,14 +5,18 @@
 The project has two parts
 
 ### Admin panel 👨‍💼
- * Only admin can access the pages whom roles decide to admin. 
- * Admin has access to update order details.
- * Admin can auth use the fixed username to get logged in.
+ * This section is mainly for admin. Admin can login with a fixed id provided to admin for authentication. 
+ * There are some pages which only the admin can route.
+ * Admin can change the order details through which users get updated regarding the order.
+ * Once the order gets completed, order details got removed from the admin page.
  
 ### Customer panel 🧑‍🤝‍🧑
- * Many pages created were for users like cart page, home, offers, login,    order details, tracking Id pages.
+ * Many pages created were for users like cart page, home, offers, login, order details, tracking Id pages.
  * Token id generated for every user is unique that stores every detail of the user.
- * Pages created using the EJS template engine and CSS framework(Tailwind CSS), this application consists of Authentication using the encrypted password (bycrpt.js lib), SESSIONS,    TOKENS, SOCKET.IO, Moment (for time), etc...
+ * Whenever the user logs in, a unique session is generated for the user that stores all the essential details. 
+ * Passwords of the user are stored in encrypted form (hashed passwords) using BrcyptJS (10 molds). 
+ * All the past order details of the user are present with a unique token id on the orders page.
+ * A user gets a tracking record for his order created using Socket.io.
 
 # 🏹 Images of Application 
 
@@ -94,11 +98,19 @@ The project has two parts
     yarn add express
     yarn add ejs 
     yarn add express-ejs-layout
+    yarn add express-flash
+    yarn add express-session
 ```
+
 ### Dev Dependancies
 
 ```
   yarn add nodemon
+  yarn add larvel-mix
+  yarn add postcss
+  yarn add resolve-url-loader
+  yarn add sass
+  yarn add sass-loader
 ```
 
 ### Database Dependancies
@@ -107,13 +119,23 @@ The project has two parts
    yarn add mongoose
    yarn add dotenv
    yarn add connect-mongo
-   yarn add express-session
 ```
 ### Authentication Dependancies
 
 ``` 
      yarn add passport
      yarn add passport-local
-     yarn add bycrptJs
      yarn add bycrpt
+```
+
+### Ajax Call Dependancies
+```
+    yarn add axios
+```
+
+### Real Time Function Dependancies
+```
+    yarn add Socket.io
+    yarn add Noty
+    yarn add moment
 ```
