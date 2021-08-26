@@ -144,3 +144,13 @@ The project has two parts
  * Run nodemon server.js in one terminal (for express server).
  
  * Run yarn watch in another terminal (for larvel mix).
+
+## ⭐ Feature Request
+ 
+ * Feel free to Open an issue on GitHub to request any additional features you might need for your use case.
+ 
+ * Connect with me on [LinkedIn](https://www.linkedin.com/in/abhay-sharma-71a181191/). I'd love ❤️️ to hear where you are using this library.
+
+## 📜 License
+ 
+ * This software is open source, licensed under the [MIT License](https://github.com/PawanKolhe/color-calendar/blob/master/LICENSE).
