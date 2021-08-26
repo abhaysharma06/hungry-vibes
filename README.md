@@ -68,7 +68,7 @@ The project has two parts
  
 ## 🚀 Features of Application
 
-* [Menu Page](https://github.com/codeforgrow/Juice_Ordering_System#-license)
+* [Menu Page](https://github.com/codeforgrow/Juice_Ordering_System#menu-page)
 * [Cart Page](https://github.com/codeforgrow/Juice_Ordering_System#cart-page)
 * [Register Auth](https://github.com/codeforgrow/Juice_Ordering_System#registration-pages)
 * [Login Auth](https://github.com/codeforgrow/Juice_Ordering_System#login-page)
