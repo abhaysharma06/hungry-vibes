@@ -87,7 +87,7 @@ The project has two parts
 
 ##  Dependancies Requires For Project
 
-## Basic Dependancies 
+## ⚙️ Basic Dependancies 
 
 ```
     yarn add express
@@ -97,7 +97,7 @@ The project has two parts
     yarn add express-session
 ```
 
-### Dev Dependancies
+### 💻 Dev Dependancies
 
 ```
   yarn add nodemon
@@ -108,14 +108,14 @@ The project has two parts
   yarn add sass-loader
 ```
 
-### Database Dependancies
+### 💿 Database Dependancies
 
 ```
    yarn add mongoose
    yarn add dotenv
    yarn add connect-mongo
 ```
-### Authentication Dependancies
+### 🔒 Authentication Dependancies
 
 ``` 
      yarn add passport
@@ -123,12 +123,12 @@ The project has two parts
      yarn add bycrpt
 ```
 
-### Ajax Call Dependancies
+### ➪ Ajax Call Dependancies
 ```
     yarn add axios
 ```
 
-### Real Time Function Dependancies
+### 🕑 Real Time Function Dependancies
 ```
     yarn add Socket.io
     yarn add Noty
