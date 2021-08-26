@@ -86,9 +86,34 @@ The project has two parts
 * [Admin Section](https://user-images.githubusercontent.com/74869287/130791176-46926f65-32ac-419c-a953-3a68ee2f9712.png)
 * [Real Time Updations](https://user-images.githubusercontent.com/74869287/130940735-25694e17-a54c-498e-a02c-f2f94c35b2dc.png) 
 
-##  Dependancies Requires
+##  Dependancies Requires for Project
+
+## Basic Dependancies 
+
 ```
     yarn add express
     yarn add ejs 
     yarn add express-ejs-layout
+```
+### Dev Dependancies
+
+```
+  yarn add nodemon
+```
+
+### Database Dependancies
+
+```
+   yarn add mongoose
+   yarn add dotenv
+   yarn add connect-mongo
+   yarn add express-session
+```
+### Authentication Dependancies
+
+``` 
+     yarn add passport
+     yarn add passport-local
+     yarn add bycrptJs
+     yarn add bycrpt
 ```
