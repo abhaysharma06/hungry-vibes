@@ -82,4 +82,4 @@ The project has two parts
  
 ## 🚀 Features of Application
 
-[Menu](https://github.com/codeforgrow/Juice_Ordering_System/edit/main/README.md)
+[Menu](https://github.com/codeforgrow/Juice_Ordering_System)
