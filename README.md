@@ -81,9 +81,9 @@ The project has two parts
 * [Feature Request](https://github.com/codeforgrow/Juice_Ordering_System#-feature-request)
 * [Licensed](https://github.com/codeforgrow/Juice_Ordering_System#-license)
 
-## Additional Features of Application
+## 📦 Additional Features of Application
   
- * 📦 [Larvel-Mix](https://laravel-mix.com/docs/4.0/installation)  
+ * [Larvel-Mix](https://laravel-mix.com/docs/4.0/installation)  
 
 ##  Dependancies Requires For Project
 
