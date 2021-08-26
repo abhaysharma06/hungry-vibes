@@ -1,6 +1,20 @@
 # Juice_Ordering_System
+
+## 🎯 Description of project
+
+The project has two parts
+
+### Admin panel 👨‍💼
+ * Only admin can access the pages whom roles decide to admin. 
+ * Admin has access to update order details.
+ * Admin can auth use the fixed username to get logged in.
  
-# Images of  application 
+### Customer panel 🧑‍🤝‍🧑
+ * Many pages created were for users like cart page, home, offers, login,    order details, tracking Id pages.
+ * Token id generated for every user is unique that stores every detail of the user.
+ * Pages created using the EJS template engine and CSS framework(Tailwind CSS), this application consists of Authentication using the encrypted password (bycrpt.js lib), SESSIONS,    TOKENS, SOCKET.IO, Moment (for time), etc...
+
+# 🏹 Images of Application 
 
 ## MENU PAGE 
 
@@ -47,26 +61,6 @@
   encrypted password can't get decrypted for comparing details during login.
   
 ![Screenshot (670)](https://user-images.githubusercontent.com/74869287/130317453-98aca5c7-0124-403b-81c9-9099efa3bb06.png)
-
-## Description of project
-
-The project has two parts
-
-1 Admin panel
- * Only admin can access the pages whom roles decide to admin. 
- * Admin has access to update order details.
- * Admin can auth use the fixed username to get logged in.
- 
-2 User panel
- * Many pages created were for users like cart page, home, offers, login,    order details, tracking Id pages.
- * Token id generated for every user is unique that stores every detail of the user.
- * Pages created using the EJS template engine and CSS framework(Tailwind CSS), this application consists of Authentication using the encrypted password (bycrpt.js lib), SESSIONS, TOKENS, SOCKET.IO, Moment (for time), etc...
-
-# Additional features of the application
- * This project also has Webpack (Laravel Mix)
- * Webpack helps make the application compatible with the browser.
- * Whenever each user login they generate a session for the user and store the details in the database.
- * Without Authentication (Registration/Login), no user can place an order.
 
 # Following are the steps to proceed application
 
