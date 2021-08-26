@@ -90,7 +90,7 @@ The project has two parts
 * [Admin Section](https://user-images.githubusercontent.com/74869287/130791176-46926f65-32ac-419c-a953-3a68ee2f9712.png)
 * [Real Time Updations](https://user-images.githubusercontent.com/74869287/130940735-25694e17-a54c-498e-a02c-f2f94c35b2dc.png) 
 
-##  Dependancies Requires for Project
+##  Dependancies Requires For Project
 
 ## Basic Dependancies 
 
@@ -139,3 +139,9 @@ The project has two parts
     yarn add Noty
     yarn add moment
 ```
+## Steps To Use
+ 1 Install all Dependancies 
+ 2 Setup [Larvel Mix](https://laravel-mix.com/docs/4.0/installation)
+ 3 Connect you Databse to projec
+   * Create a file name it .env like ➡️ [example.env](https://github.com/codeforgrow/Juice_Ordering_System/blob/main/example.env) 
+ 4 
