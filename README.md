@@ -16,46 +16,46 @@ The project has two parts
 
 # 🏹 Images of Application 
 
-## MENU PAGE 
+### MENU PAGE 
 
 ![Screenshot (689)](https://user-images.githubusercontent.com/74869287/130790075-0b1a47d1-0f69-4d30-8fab-cd1fbfd93ad2.png)
 
-## CART PAGE
+### CART PAGE
 
 ![Screenshot (690)](https://user-images.githubusercontent.com/74869287/130790055-80a4f933-2483-41a9-9373-378135ad43b2.png)
 
-## REGISTRATION PAGES
+### REGISTRATION PAGES
 
 ![Screenshot (687)](https://user-images.githubusercontent.com/74869287/130790152-befda7e5-50a6-42ea-9250-128f78b40c6f.png)
 
-## LOGIN PAGE
+### LOGIN PAGE
 
 ![Screenshot (688)](https://user-images.githubusercontent.com/74869287/130790105-dea4920e-77db-4b89-b472-ce4ec216631e.png)
 
-## ADDRESS AND OTHER DETAIL
+### ADDRESS AND OTHER DETAIL
 
 ![Screenshot (686)](https://user-images.githubusercontent.com/74869287/130789519-fbbbad6d-fe0a-45b7-ba05-f248e6442798.png)
 
-## ALL ORDER DETAILS
+### ALL ORDER DETAILS
 
 ![Screenshot (685)](https://user-images.githubusercontent.com/74869287/130789492-cfabe5db-7d0c-4a4f-846a-04e5f9e5898f.png)
 
-## TRACKING DETAILS OF ORDER
+### TRACKING DETAILS OF ORDER
 
 ![Screenshot (684)](https://user-images.githubusercontent.com/74869287/130789469-cfb1e9f0-bfd4-4ae3-baea-c76ceb3f9f99.png)
 
-## ADMIN PAGE 
+### ADMIN PAGE 
 ![Screenshot (692)](https://user-images.githubusercontent.com/74869287/130791176-46926f65-32ac-419c-a953-3a68ee2f9712.png)
 
-## ORDER UPDATION AT REAL TIME
+### ORDER UPDATION AT REAL TIME
 ![Screenshot (691)](https://user-images.githubusercontent.com/74869287/130940735-25694e17-a54c-498e-a02c-f2f94c35b2dc.png)
 
 
-## MONGODB COLLECTION USED IN PROJECT
+### MONGODB COLLECTION USED IN PROJECT
 
 ![Screenshot (671)](https://user-images.githubusercontent.com/74869287/130317439-0f21a200-3ad5-4355-8f33-817553c875dd.png)
 
-## USER COLLECTION DETAILS IN MONOGODB
+### USER COLLECTION DETAILS IN MONOGODB
 
 * there clearly showing that the password is stored in encrypted form using bycrpt.js (10 mould passwords),
   encrypted password can't get decrypted for comparing details during login.
@@ -84,4 +84,11 @@ The project has two parts
 * [Past Order Details](https://user-images.githubusercontent.com/74869287/130789492-cfabe5db-7d0c-4a4f-846a-04e5f9e5898f.png)
 * [Tracking Order Page](https://user-images.githubusercontent.com/74869287/130789469-cfb1e9f0-bfd4-4ae3-baea-c76ceb3f9f99.png)
 * [Admin Section](https://user-images.githubusercontent.com/74869287/130791176-46926f65-32ac-419c-a953-3a68ee2f9712.png)
-* [Real Time Updations](https://user-images.githubusercontent.com/74869287/130940735-25694e17-a54c-498e-a02c-f2f94c35b2dc.png)
+* [Real Time Updations](https://user-images.githubusercontent.com/74869287/130940735-25694e17-a54c-498e-a02c-f2f94c35b2dc.png) 
+
+##  Dependancies Requires
+```
+    yarn add express
+    yarn add ejs 
+    yarn add express-ejs-layout
+```
