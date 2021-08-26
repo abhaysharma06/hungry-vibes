@@ -77,6 +77,8 @@ The project has two parts
 * [Tracking Order Page](https://user-images.githubusercontent.com/74869287/130789469-cfb1e9f0-bfd4-4ae3-baea-c76ceb3f9f99.png)
 * [Admin Section](https://user-images.githubusercontent.com/74869287/130791176-46926f65-32ac-419c-a953-3a68ee2f9712.png)
 * [Real Time Updations](https://user-images.githubusercontent.com/74869287/130940735-25694e17-a54c-498e-a02c-f2f94c35b2dc.png) 
+* [Feature Request]
+* [Licensed]
 
 ## Additional Features of Application
   
