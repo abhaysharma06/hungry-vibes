@@ -1,0 +1,33 @@
+<!--------**********orders-section**********----------->
+ 
+<section class="container" style="margin-top:8rem ;">
+  <h1 style="font-size: 3rem;">All Items</h1>
+  <div class="grid gap-x-12 gap-y-16 grid-cols-4">
+      
+     <!--information of jucies fetching from database 
+           like => image, name , size , price 
+         which displaying on page --> 
+      <% juices.forEach(function(juices){ %>
+
+         <div class="menu-card">
+             <div class="card">
+             <img class="foodimg" src="/img/<%= juices.image%>" alt="">
+             <div class="text-center" style="background-color: transparent;">
+                 <h4 class="foodtext" style="background-color: transparent;"><%= juices.name%></h4>
+                 <h5 style="color:#8e4785; font-weight:bold; background-color: transparent;"><%= juices.size%></h5>
+                 <div class="flex item-center justify-around mt-6" style="background-color: transparent;">
+                     <span class="font-bold text-lg" style="background-color: transparent; font-size: 2rem;">₹<%= juices.price%></span>
+                     <button data-juices="<%= JSON.stringify(juices) %>"  class="add-to-cart">
+                         <span class="ml-4 btn-cart" >+ Add</span>                         
+                     </button>
+                 </div>
+             </div>
+            </div> 
+          </div>
+
+     <% }) %>
+
+
+  </div>
+  
+</section>

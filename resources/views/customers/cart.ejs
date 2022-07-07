@@ -1,41 +1,40 @@
 <!--*******rendering details in cart section**********-->
-<section class="cart">
+<section class="cart" style="background-color: aliceblue;">
     <% if (session.cart){ %>
-        <div class="order container mx-auto w-1/2 py-10" >
-            <div class="flex items-center border-b border-grey-300">
-                <img width="40px" src="/img/cart-black.png" alt="cart1">
-                <h1 class="font-bold ml-4 text-2xl">Order Summary</h1>
+        <div class="order container">
+            <div style="margin: 20px 10px" class="flex">
+                <img width="30px" style="margin: 5px;" src="/img/cart-black.png" alt="cart1">
+                <h1 style="font-size: 20px; font-weight: 600;">Order Summary</h1>
             </div>
-            <div class="burger-list mt-8">
+            <div class="burger-list">
                 <% for(let juices of Object.values(session.cart.items)){  %>
                 <div class="flex items-center my-8">
-                    <img class="w-32" src="/img/<%= juices.items.image %>" alt="cart-list">
+                    <img style="width: 100px;" src="/img/<%= juices.items.image %>" alt="cart-list">
                     <div class=" flex-1 ml-4">
-                        <h1><%= juices.items.name %></h1>
-                        <span><%= juices.items.size%></span>
-                    </div class="">
-                    <span class="flex-1"><%= juices.qty %></span>
-                    <span class="font-bold text-lg">₹ <%= juices.items.price %></span>
+                        <h1 style="font-size: 20px;"><%= juices.items.name %></h1>
+                        <span style="font-size: 15px;"><%= juices.items.size%></span>
+                    </div>
+                    <span class="flex-1" style="font-size: 20px;"><%= juices.qty %></span>
+                    <span style="font-size: 20px;">₹ <%= juices.items.price %></span>
                 </div>
                 <% } %>
     
             </div>
+        </div>
             <hr>
             
     
-            <div class="text-right py-4">
+            <div class="text-right">
                 <div>
-                    <span class="text-lg font-bold">Total Amount:</span>
-                    <span class="amount ml-2 text-2xl font-bold">₹ <%= session.cart.totalPrice %></span>
+                    <span style="font-size: 20px; font-weight:600; margin-right:5px;">Total Amount :</span>
+                    <span style="font-size: 20px; font-weight:600; margin-right:50px;">₹ <%= session.cart.totalPrice %></span>
                 </div>
                 <% if(user) {%>
                 <div>
-                    <form action="/orders" method="POST" class="mt-12">
-                        <input name="phone" class="border border-grey-400 p-2 w-1/2 mt-4" type="text" placeholder="Phone number">
-                        <input name="address" class="border border-grey-400 p-2 w-1/2 mt-4" type="text" placeholder="Address">
-                        <div>
-                        <button class="btn-primary px-6 py-2 rounded-full text-white font-bold mt-4" type="submit">Order Now</button>
-                        </div>
+                    <form action="/orders" method="POST" class="mt-12" style="flex-direction:column;">
+                        <input name="phone"  class="border border-black  p-2 w-1/4 mt-4 mr-4" style="border-radius: 10px; padding: 7px 7px;" type="text" placeholder="Phone number">
+                        <input name="address" class="border border-black p-2 w-1/4 mt-4 mr-4" style="border-radius: 10px; padding: 7px 7px;" type="text" placeholder="Address">
+                        <button class="btn-primary px-6 py-2 text-white font-bold mt-4 mr-6" style="border-radius: 10px; padding: 9px 9px; background-color: #410056;"  type="submit">Order Now</button>
                     </form>
                 </div>
               <% } else { %>

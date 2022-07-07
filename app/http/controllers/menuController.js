@@ -1,13 +1,13 @@
 const Menu = require("../../models/menu");
 
-function homeController() {
+function menuController() {
   return {
     /* factory function as it returns object (jucies) */
-    async index(req, res) {
+    async menu(req, res) {
       const juices = await Menu.find();
-      return res.render("home", { juices: juices });
+      return res.render("menu", { juices: juices });
     },
   };
 }
 
-module.exports = homeController;
+module.exports = menuController;

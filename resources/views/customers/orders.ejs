@@ -1,18 +1,19 @@
 <section  class="order light-section">
      <div class= "container px-20 ">
-         <h1 class="font-bold text-lg mb-4 px-8">All orders</h1>
+         <h1 style="font-size: 20px; margin:20px 20px;">All orders</h1>
          <% if(messages.success) { %>
-         <div id="success-alert" class="flex items-center bg-green-500 text-white text-sm font-bold px-4 py-3" role="alert">
+         <div id="success-alert" role="alert">
         <!-- *******a msg apper when order is succuss, which when disapper in some time********* -->
-        <p><%= messages.success%> 😊</p>    
+        <p style="font-size: 20px; color: black; background-color: lightgreen; padding:5px 5px;"><%= messages.success%> 😊</p>    
     </div>        
     <% } %>
     <!-- contains all the order details in table -->
          <table class="w-full tabel-auto bg-white">
              <thead>
                  <tr>
-                    <th class="px-4 py-2 text-left">Order</th> 
-                    <th class="px-4 py-2 text-left">Address</th>
+                    <th class="px-4 py-2 text-left">Order Number</th> 
+                    <th class="px-4 py-2 text-left">Phone Number</th>
+                    <th class="px-4 py-2 text-left">Home Address</th>
                     <th class="px-4 py-2 text-left">Time</th>
                  </tr>
              </thead>

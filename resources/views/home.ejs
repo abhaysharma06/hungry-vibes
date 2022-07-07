@@ -1,47 +1,152 @@
 <!--------------for----------top----------section------------image----------and------------------description------------->
-    <section class="header py-16">
-         <div class="container flex items-center justify-between">
-              <div class="py-8 px-20 w-1/2">
-                <h6 class="text-lg py-4"><em> Are you thristy.....?</em></h6>      
-                <h1 class="text-6xl font-bold">Lets Drink It</h1>
-    
-               <button class="px-6 py-2 rounded-full text-white font-bold mt-4 btn-primary">Order Now</button>
+<section class="home-header container">
+    <div class="row">
+      <div class="col-md-5 home-headings">
+          <h1>
+              Fresh, Healthy and Delicious Food
+          </h1>
+          <h3>
+              To your doorsteps
+          </h3>
+          <a href="/menu">Order Now →</i></i></a>
+      </div>
+      <div class="home-image col-md-7">
+          <img src="/img/img2.png">
+      </div>
+    </div> 
+</section>
+<section class="home-section2 container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-5 home-card">
+                    <img class="h-i-card" src="/img/noodle3.png">
+                    <h4 class="h-i-text">Order street food</h4>
+                    <a href="/menu" class="h-i-link">View</a>
                 </div>
-              <div class="wt-1/2">
-                 <img src="/img/main.png" alt="">
-              </div>
-         </div>
-    </section>
-
-<!--------**********orders-section**********----------->
-     <section class="menu container px-12 py-8">
-         <h1 class="text-xl font-bold mb-8">All Jucies</h1>
-         <div class="grid gap-x-12 gap-y-16 grid-cols-4">
-             
-            <!--information of jucies fetching from database 
-                  like => image, name , size , price 
-                which displaying on page --> 
-             <% juices.forEach(function(juices){ %>
-
-                <div class="w-64">
-                    <img class="h-40 mb-4 mx-auto " src="/img/<%= juices.image%>" alt="">
-                    <div class="text-center">
-                        <h2 class="mb-4 text-lg"><%= juices.name%></h2>
-                        <span class="size py-1 px-4 rounded-full uppercase text-xs"><%= juices.size%></span>
-                        <div class="flex item-center justify-around mt-6">
-                            <span class="font-bold text-lg">₹<%= juices.price%></span>
-                            <button data-juices="<%= JSON.stringify(juices) %>" class="add-to-cart py-1 px-6 rounded-full flex items-center">
-                                <span>+</span>
-                                <span class="ml-4">Add</span>
-                                
-                            </button>
-                        </div>
-                    </div>
-                 </div>
-
-            <% }) %>
+                <div class="col-md-5 home-card ">
+                    <img  class="h-i-card" src="/img/Noodles.png"> 
+                    <h4 class="h-i-text">Order from cafes</h4>
+                    <a href="menu" class="h-i-link">View</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+         <h1 class="mt-1">We are Ready to supply food to your doors <span style="color: #F3732A">anytime</span></h1>
+        </div>
+    </div>
+</section>
 
 
-         </div>
-         
-     </section>
+
+<section class="home-section3 container">
+    <div class="row">
+        <div class="col-md-8">
+            <h1 class="section3-h1">About Us</h1>
+            <p class="section3-p">Ut enim acgsd minim veniam, quxcis nostrud exercitation ullamco laboris nisi ufsit aliquip ex ea commodo consequat is aute irure m, quis nostrud exer
+
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected our, or randomised words which don't look even slightly believab If you are going to use a passage.</p>
+        </div>
+        <div class="col-md-4">
+        <img class="home-sec-3-img" src="/img/delivery-boy.png">
+        </div>
+    </div>
+</section>
+
+
+<section class="home-section4 container">
+    <div class="features-heading">
+        <h1 style="font-size:4rem; text-align:center; color:#410056">Our Awesome Serivces</h1>
+        <h4 style="font-size:1.5rem; text-align:center; font-weight:bold; color:#F3732A">Features</h4>
+
+    </div>
+    <div class="row f-cards">
+        <div class="col-md-3 feature-card">
+         <h1 style="color:#F3732A; text-align:center; font-size:8rem"><i class="fas fa-clock" ></i></h1>
+         <h3 class="f-c-heading">Fast Delivery</h3>
+         <p class="f-c-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi culpa tenetur, error nulla rerum ex officia autem adipisci laudantium amet quas, odio minima corporis nemo nihil est excepturi aperiam iure!</p>  
+        </div>
+        <div class="col-md-3 feature-card">
+            <h1 style="color:#F3732A; text-align:center; font-size:8rem"><i class="fas  fa-cookie-bite  " ></i></h1>
+        <h3 class="f-c-heading">No Extra Charges</h3>
+        <p class="f-c-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi culpa tenetur, error nulla rerum ex officia autem adipisci laudantium amet quas, odio minima corporis nemo nihil est excepturi aperiam iure!</p>  
+        </div>
+        <div class="col-md-3 feature-card">
+            <h1 style="color:#F3732A; text-align:center; font-size:8rem"><i class="fas fa-bicycle" ></i></h1>
+        <h3 class="f-c-heading">Fast Delivery</h3>
+        <p class="f-c-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi culpa tenetur, error nulla rerum ex officia autem adipisci laudantium amet quas, odio minima corporis nemo nihil est excepturi aperiam iure!</p>  
+        </div>
+    </div>
+
+</section>
+
+<section class=" home-section5">
+<div class="container">
+<img  style="width:20%; margin:4vh 40% auto 40%" src="/img/img1.png">
+<div style="">
+<h1 style=" color:#410056; text-align:center; font-size:3rem; ">Food's the most precious things over the world</h1>
+<p style="text-align: center; color:#8e4785; font-weight: bold; font-size:1.2rem; ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut neque consectetur inventore soluta id, incidunt ducimus magni minima sapiente explicabo odio hic.</p>
+<button class="sec5-btn btn"><a style="color: white;" href="/menu">explore ➟</a></button>
+</div>
+</div>
+</section>
+<hr>
+
+
+<!-- footer -->
+
+<section class="footer">
+    <div class="container">
+    <div class="row">
+        <div class="col-md-3 footer-brand">
+            <img  class="logo" src="/img/hungry-vibe-logo.png">
+        </div>
+        
+        <div class="col-md-3">
+            <ul class="footer-list">
+                <li><h4>Resources</h4></li>
+                <li><a href="/" class="footer-list-item">About</a></li>
+                <li><a href="/" class="footer-list-item">Features</li>
+                <li><a href="/contact" class="footer-list-item">Email support</a></li>    
+            </ul>
+            <div  class="footer-icons">
+                <a href="/menu"><i class="fas fa-birthday-cake"></i></a>
+                <a href="/menu"><i class="fas fa-hamburger"></i></a>
+                <a href="/menu"><i class="fas fa-cocktail"></i></a>
+                <a href="/menu"><i class="fas fa-pizza-slice"></i></a>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <ul class="footer-list">
+                <li><h4>Links</h4></li>
+                <li><a href="/" class="footer-list-item" >Home</a></li>
+                <li><a href="/menu" class="footer-list-item">Menu</a></li>
+                <li><a href="/cart" class="footer-list-item">Cart</li>
+                <li><a href="/contact" class="footer-list-item">Email support</a></li>    
+            </ul>
+            
+        </div>
+        <div class="col-md-3">
+            <ul class="footer-list">
+                <li><h4>Contact Us</h4></li>
+            </ul>
+            <div class="contact">
+                <form>
+                    <input type='email' placeholder="enter your email">
+                </form>
+                <button>GO</button>
+            </div>
+            <ul class="footer-list">
+                <li><h5>Social</h5></li>
+            </ul>
+            <div class="footer-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<footer><p>hungry vibes</p></footer>

@@ -6,7 +6,8 @@
     "image": "orange.png",
     "price": "250",
     "size": "small"
-  },{
+  },
+  {
     "_id": {
       "$oid": "5eee6671a27a66807cf2bea3"
     },
@@ -14,15 +15,8 @@
     "image": "pineapple.png",
     "price": "300",
     "size": "Large"
-  },{
-    "_id": {
-      "$oid": "5eee6692a27a66807cf2bea4"
-    },
-    "name": "Cocunut Juice",
-    "image": "cocunut.png",
-    "price": "200",
-    "size": "small"
-  },{
+  },
+  {
     "_id": {
       "$oid": "5eee66a5a27a66807cf2bea5"
     },
@@ -30,7 +24,8 @@
     "image": "oreo.png",
     "price": "500",
     "size": "large"
-  },{
+  },
+  {
     "_id": {
       "$oid": "5eee66c4a27a66807cf2bea6"
     },
@@ -38,7 +33,8 @@
     "image": "choclate.png",
     "price": "350",
     "size": "medium"
-  },{
+  },
+  {
     "_id": {
       "$oid": "5eee66cfa27a66807cf2bea7"
     },
@@ -46,15 +42,8 @@
     "image": "pizza.png",
     "price": "200",
     "size": "small"
-  },{
-    "_id": {
-      "$oid": "5eee66eea27a66807cf2bea8"
-    },
-    "name": "Amala Jucie",
-    "image": "amala.png",
-    "price": "600",
-    "size": "large"
-  },{ 
+  },
+  { 
     "_id": {
       "$oid": "5eee6717a27a66807cf2bea9"
     },
@@ -62,4 +51,189 @@
     "image": "Grapes.png",
     "price": "500",
     "size": "medium"
+  },
+  { 
+    "_id": {
+      "$oid": "5ee717a27a66807cf2bea94"
+    },
+    "name": "noodles",
+    "image": "noodles2.png",
+    "size": "medium",
+    "price": "100"
+  },
+  { 
+    "_id": {
+      "$oid": "eee6717a27a66807cf2bea92"
+    },
+    "name": "noodles",
+    "image": "noodles3.png",
+    "price": "100"
+  },
+  { 
+    "_id": {
+      "$oid": "5eee6717a66807cf2bea97"
+    },
+    "name": "noodles",
+    "image": "noodles4.png",
+    "price": "100"
+  },
+  { 
+    "_id": {
+      "$oid": "5eeea27a668f2bea9188"
+    },
+    "name": "noodles",
+    "image": "Noodles.png",
+    "price": "100"
+  },
+  { 
+    "_id": {
+      "$oid": "5eee717a27a66807cf967"
+    },
+    "name": "noodles",
+    "image": "img4.png",
+    "price": "100"
+  },
+  { 
+    "_id": {
+      "$oid": "5eee6717a26807cf2b56y4"
+    },
+    "name": "Pasta",
+    "image": "img1.png",
+    "price": "500",
+    "size": "medium"
+  },
+  { 
+    "_id": {
+      "$oid": "5eee6717a27a66807cfs45"
+    },
+    "name": "Papdi Chaat",
+    "image": "img2.png",
+    "price": "100"
+  },
+  { 
+    "_id": {
+      "$oid": "5eee6717a27a66807cf2bea9"
+    },
+    "name": "Gool Ghee",
+    "image": "img3.png",
+    "price": "100"
+  },
+  {
+    "_id": {
+      "$oid": "5eee651f739f8c674fd736ee"
+    },
+    "name": "Orange Jucie",
+    "image": "orange.png",
+    "price": "250",
+    "size": "small"
+  },
+  {
+    "_id": {
+      "$oid": "5eee6671a27a66807cf244ff"
+    },
+    "name": "Pineapple Jucie",
+    "image": "pineapple.png",
+    "price": "300",
+    "size": "Large"
+  },
+  {
+    "_id": {
+      "$oid": "5eee66a5a27a66807cf2b3d4"
+    },
+    "name": "Oreo Shake",
+    "image": "oreo.png",
+    "price": "500",
+    "size": "large"
+  },
+  {
+    "_id": {
+      "$oid": "5rrr566c4a27a66807cf2bea6"
+    },
+    "name": "Choclate IceCream Shake",
+    "image": "choclate.png",
+    "price": "350",
+    "size": "medium"
+  },
+  {
+    "_id": {
+      "$oid": "5e4df6cfa27a66807cf2bea7"
+    },
+    "name": "Choclate Shake",
+    "image": "pizza.png",
+    "price": "200",
+    "size": "small"
+  },
+  { 
+    "_id": {
+      "$oid": "5e3ed717a27a66807cf2bea9"
+    },
+    "name": "Grapes Jucie",
+    "image": "Grapes.png",
+    "price": "500",
+    "size": "medium"
+  },
+  { 
+    "_id": {
+      "$oid": "5rg4517a27a66807cf2bea94"
+    },
+    "name": "noodles",
+    "image": "noodles2.png",
+    "price": "100"
+  },
+  { 
+    "_id": {
+      "$oid": "erf417a27a66807cf2bea92"
+    },
+    "name": "noodles",
+    "image": "noodles3.png",
+    "price": "100"
+  },
+  { 
+    "_id": {
+      "$oid": "5345e6717a66807cf2bea91"
+    },
+    "name": "noodles",
+    "image": "noodles4.png",
+    "price": "100"
+  },
+  { 
+    "_id": {
+      "$oid": "5e5gda27a668f2bea911"
+    },
+    "name": "noodles",
+    "image": "Noodles.png",
+    "price": "100"
+  },
+  { 
+    "_id": {
+      "$oid": "5efr5717a27a66807cf913"
+    },
+    "name": "noodles",
+    "image": "img4.png",
+    "price": "100"
+  },
+  { 
+    "_id": {
+      "$oid": "556fe6717a26807cf2bea94"
+    },
+    "name": "Pasta",
+    "image": "img1.png",
+    "price": "500",
+    "size": "medium"
+  },
+  { 
+    "_id": {
+      "$oid": "56r6717a27a66807cf2a9"
+    },
+    "name": "Papdi Chaat",
+    "image": "img2.png",
+    "price": "100"
+  },
+  { 
+    "_id": {
+      "$oid": "566fe6717a27a66807cf2"
+    },
+    "name": "Gool Ghee",
+    "image": "img3.png",
+    "price": "100"
   }]

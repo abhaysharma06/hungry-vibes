@@ -1,10 +1,10 @@
-<section class="status">
+<section class="status" style="background-color: aliceblue;">
     <div class="container mx-auto">
         <div class="status-box w-full lg:w-2/3 mx-auto">
             <div class="flex items-center justify-between mb-12">
-                <h1 class="text-xl font-bold">Track delivery status</h1>
+                <h1 style="font-size: 20px;">Track delivery status</h1>
                <!--***************it fetch and dipslay order id*******--> 
-                <h6 class="bg-white py-1 rounded-full font-bold px-4 text-red-600 text-xs"><%=
+                <h6 style="color: red; font-size:12px; background-color: transparent; "><%=
                     order._id %></h6>      
                 <input id="hiddenInput" type="hidden" value="<%= JSON.stringify(order) %>">
             </div>
@@ -12,14 +12,14 @@
             
            <!---**************** these all give help in giving status 
                                  to js/admin.js for updating the status of order****************  -->     
-                <li class="status_line text-sm md:text-xl pb-12" data-status="order_placed"><span>Order Placed</span>
+                <li style="font-size: 15; margin: 45px 20px; " data-status="order_placed"><span>Order Placed</span>
                 </li>
-                <li class="status_line text-sm md:text-xl pb-12" data-status="confirmed"><span>Order confirmation</span>
+                <li style="font-size: 15; margin: 45px 20px;"  data-status="confirmed"><span>Order confirmation</span>
                 </li>
-                <li class="status_line text-sm md:text-xl pb-12" data-status="prepared"><span>Preparation</span></li>
-                <li class="status_line text-sm md:text-xl pb-12" data-status="delivered"><span>Out for delivery </span>
+                <li style="font-size: 15; margin: 45px 20px;"  data-status="prepared"><span>Preparation</span></li>
+                <li style="font-size: 15; margin: 45px 20px;"  data-status="delivered"><span>Out for delivery </span>
                 </li>
-                <li class="status_line text-sm md:text-xl" data-status="completed"><span>Complete</span></li>
+                <li style="font-size: 15; margin: 45px 20px;"  data-status="completed"><span>Complete</span></li>
             </ul>
         </div>
     </div>

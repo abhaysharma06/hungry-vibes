@@ -1,34 +1,37 @@
 <!-- ***********this page created for registration********** -->
-<section class="login flex justify-center pt-24">
-    <div class="w-full max-w-xs">
-        <form action="/register" method="POST" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" >
-        <!-- ******* structure for registration ********-->
-        <% if(messages.error) { %>
-            <span class="text-red-500 text-sm"><%= messages.error %></span>
-          <% } %>
-            <div class="mb-4">
-                <label for="username"  class="block text-gray-700 text-sm font-bold mb-2" > Username </label>
-              <input name="name" value="<%= messages.name %>" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700
-               leading-tight focus:outline-none focus:shadow-outline" id="username" placeholder="Enter your usename ">        
+
+
+    <!-- section for login page -->
+    <section class="login"  style="background-color: aliceblue;" >
+      <div class="container">
+              <div class="login-card">
+                  <div class="row">
+                      <div class="col-md-6">
+                          <div class="login-image">
+                            <img class="login-img" src="/img/login-food.png"  alt="a girl walking image">   
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                           <h2 class="login-h2">Get Started</h2>
+                           <form action="/register" method="POST" class="register-form">
+                            <% if(messages.error) { %>
+                              <span style="font-size: 10px; color:red; background-color: transparent;"><%= messages.error %></span>
+                            <% } %>
+                                 <input class="login-email" type="text" placeholder="Username" name="name" required value="<%= messages.name %>"><br/>
+                                 <input class="login-psw" type="email" placeholder="Email" name="email" required  value="<%= messages.email %>" >
+                                 <input class="login-psw" type="password" placeholder="Password" name="password" required>
+                                 <div class="flex items-center justify-between">
+                                  <button style="border-radius: 10px; font-weight: 400; width: 10rem; margin-left: 5rem; height: 3rem; border: 1px solid transparent; background-color:  #410056; color: white; " type="submit"> 
+                                  Sign up
+                                  </button>
+                                  <a href="/login" class="font-size:1; color:#410056">Already have account?</a>
+                              </div>
+                      </form>
+                  </div>
               </div>
-            <div class="mb-4">
-              <label for="email"  class="block text-gray-700 text-sm font-bold mb-2"> Email </label>
-            <input name="email" value="<%= messages.email %>" type="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700
-             leading-tight focus:outline-none focus:shadow-outline" id="email" placeholder="Enter your E-mail">        
-            </div>
-            <div class="mb-6">
-                <label for="password" class="block text-gray-700 text-sm font-bold mb-2">Password</label>
-                <input name="password" type="password" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700
-                leading-tight focus:outline-none focus:shadow-outline" id="password" placeholder="*****************">   
-            </div>
-            <div class="flex items-center justify-between">
-                <button class="btn-primary rounded-full text-white font-bold py-2 px-4 
-                rounded focus: outline-none focus:shadow-outline" type="submit"> 
-                Signup
-                </button>
-                <a href="/login" class="inline-block align-baseline font-bold text-sm text-blue-500 ">Already have account?</a>
-            </div>
-        </form>
-    </div>
-</section>
+          </div>
+      </div>
+  </section>
+
+
 
