@@ -30,4 +30,8 @@
 
 - Order tracker
     - Socket connection
+<<<<<<< HEAD
         - dependancies socket.io
+=======
+        - dependancies socket.io
+>>>>>>> d09cbd0d693a869b3a54a4bfa7dd088b5b37e12c

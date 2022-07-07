@@ -6,8 +6,12 @@
     "image": "orange.png",
     "price": "250",
     "size": "small"
+<<<<<<< HEAD
   },
   {
+=======
+  },{
+>>>>>>> d09cbd0d693a869b3a54a4bfa7dd088b5b37e12c
     "_id": {
       "$oid": "5eee6671a27a66807cf2bea3"
     },
@@ -15,8 +19,20 @@
     "image": "pineapple.png",
     "price": "300",
     "size": "Large"
+<<<<<<< HEAD
   },
   {
+=======
+  },{
+    "_id": {
+      "$oid": "5eee6692a27a66807cf2bea4"
+    },
+    "name": "Cocunut Juice",
+    "image": "cocunut.png",
+    "price": "200",
+    "size": "small"
+  },{
+>>>>>>> d09cbd0d693a869b3a54a4bfa7dd088b5b37e12c
     "_id": {
       "$oid": "5eee66a5a27a66807cf2bea5"
     },
@@ -24,8 +40,12 @@
     "image": "oreo.png",
     "price": "500",
     "size": "large"
+<<<<<<< HEAD
   },
   {
+=======
+  },{
+>>>>>>> d09cbd0d693a869b3a54a4bfa7dd088b5b37e12c
     "_id": {
       "$oid": "5eee66c4a27a66807cf2bea6"
     },
@@ -33,8 +53,12 @@
     "image": "choclate.png",
     "price": "350",
     "size": "medium"
+<<<<<<< HEAD
   },
   {
+=======
+  },{
+>>>>>>> d09cbd0d693a869b3a54a4bfa7dd088b5b37e12c
     "_id": {
       "$oid": "5eee66cfa27a66807cf2bea7"
     },
@@ -42,6 +66,7 @@
     "image": "pizza.png",
     "price": "200",
     "size": "small"
+<<<<<<< HEAD
   },
   { 
     "_id": {
@@ -166,11 +191,25 @@
   { 
     "_id": {
       "$oid": "5e3ed717a27a66807cf2bea9"
+=======
+  },{
+    "_id": {
+      "$oid": "5eee66eea27a66807cf2bea8"
+    },
+    "name": "Amala Jucie",
+    "image": "amala.png",
+    "price": "600",
+    "size": "large"
+  },{ 
+    "_id": {
+      "$oid": "5eee6717a27a66807cf2bea9"
+>>>>>>> d09cbd0d693a869b3a54a4bfa7dd088b5b37e12c
     },
     "name": "Grapes Jucie",
     "image": "Grapes.png",
     "price": "500",
     "size": "medium"
+<<<<<<< HEAD
   },
   { 
     "_id": {
@@ -237,3 +276,6 @@
     "image": "img3.png",
     "price": "100"
   }]
+=======
+  }]
+>>>>>>> d09cbd0d693a869b3a54a4bfa7dd088b5b37e12c

@@ -8,11 +8,10 @@
                     order._id %></h6>      
                 <input id="hiddenInput" type="hidden" value="<%= JSON.stringify(order) %>">
             </div>
-            <ul>
-            
+                        
            <!---**************** these all give help in giving status 
-                                 to js/admin.js for updating the status of order****************  -->     
-                <li style="font-size: 15; margin: 45px 20px; " data-status="order_placed"><span>Order Placed</span>
+                                 to js/admin.js for updating the status of order****************  -->  
+                <li class="status_line text-sm md:text-xl pb-12" data-status="order_placed"><span>Order Placed</span>
                 </li>
                 <li style="font-size: 15; margin: 45px 20px;"  data-status="confirmed"><span>Order confirmation</span>
                 </li>
