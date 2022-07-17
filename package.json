@@ -5,8 +5,8 @@
   "main": "index.js",
   "author": "Abhay",
   "engines": {
-    "node": "0.12.x",
-    "npm": "2.5.x"
+    "node": "14.18.3",
+    "npm": "8.2.0"
   },
   "scripts": {
     "server": "node server.js",
