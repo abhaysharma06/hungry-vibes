@@ -53,18 +53,18 @@ export default function initAdmin(socket) {
         return `
                 <tr>
                 <td style="border-width:2px; border-color:grey; background-color:transparent">
-                    <p style="text-align:center; font-size:1.5rem; color:black;">${
+                    <p style="text-align:center; font-size:1.5rem; color:#410056;">${
                       order._id
                     }</p>
                 </td>
             
                 <td style="border-width:2px; border-color:grey; background-color:transparent">
-                <p style="text-align:center; font-size:1.5rem; color:black;">
+                <p style="text-align:center; font-size:1.5rem; color:#410056;">
                 ${order.phone}
                 </p>
                 </td>
                 <td style="border-width:2px; border-color:grey; background-color:transparent">
-                <p style="text-align:center; font-size:1.5rem; color:black;">
+                <p style="text-align:center; font-size:1.5rem; color:#410056;">
                 ${order.address}
                 </p></td>
                 <td style="border-width:2px; border-color:grey; background-color:transparent">
@@ -74,7 +74,7 @@ export default function initAdmin(socket) {
                               order._id
                             }">
                             <select name="status" onchange="this.form.submit()"
-                                class="text-center block appearance-none w-full bg-transparent border border-black-500 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                                class="text-center block appearance-none w-full bg-green border border-black-500 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
                                 <option value="order_placed"   
                                     ${
                                       order.status === "order_placed"
@@ -112,18 +112,18 @@ export default function initAdmin(socket) {
                         </div>
                     </div>
                 </td>
-                <td style="border-width:2px; border-color:grey; background-color:transparent">
-                    <p style="text-align:center; font-size:1.5rem; color:black;">
+                <td style="border-width:2px; border-color:grey; background-color:transparent;">
+                    <p style="text-align:center; font-size:1.5rem; color:#410056;;">
                     ${moment(order.createdAt).format("hh:mm A")}
                     </p>
                 </td>
                 <td style="border-width:2px; border-color:grey; background-color:transparent">
-                    <p style="text-align:center; font-size:1.5rem; color:black;">
+                    <p style="text-align:center; font-size:1.5rem; color:red;">
                     ${order.paymentStatus ? "paid" : "Not paid"}
                     </p>
                 </td>
                 <td style="border-width:2px; border-color:grey; background-color:transparent">
-                    <p style="text-align:center; font-size:1.5rem; color:black;">
+                    <p style="text-align:center; font-size:1.5rem; color:#410056;">
                     ${order.status}
                     </p>  
                 </td>

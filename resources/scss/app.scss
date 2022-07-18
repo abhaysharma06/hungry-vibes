@@ -1,6 +1,6 @@
  @import './variables';
- @import '~noty/src/noty.scss';
- @import '~noty/src/themes/mint.scss';
+//  @import '~noty/src/noty.scss';
+//  @import '~noty/src/themes/mint.scss';
 
 //  body{
 //      font-family: Raleway, Helvetica Neue , Helvetica , Arial,sans-serif;
@@ -720,4 +720,12 @@ nav{
     background-color: transparent;
  }
 
+
+
+.status_line{
+    font-size: 2rem; 
+    margin: 45px 20px;
+    color: #410056;
+    justify-content: space-around;
+}
 

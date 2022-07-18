@@ -60,6 +60,7 @@ let hiddenInput = document.querySelector("#hiddenInput");
 let order = hiddenInput ? document.querySelector("#hiddenInput").value : null;
 order = JSON.parse(order);
 let time = document.createElement("small");
+time.style = "color:red; margin-left:45rem;";
 
 function updateStatus(order) {
   statuses.forEach((status) => {
