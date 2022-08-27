@@ -20,40 +20,39 @@ The project has two parts
 
 # 🏹 Images of Application 
 
+### LANDING PAGE
+
+![Screenshot (917)](https://user-images.githubusercontent.com/74869287/187036704-3e5051ef-1c7b-44de-8e87-3c38e6f05feb.png)
+
+![Screenshot (913)](https://user-images.githubusercontent.com/74869287/187036643-a2ff6616-9b8f-4676-aeed-41eac25b7ac2.png)
+
 ### MENU PAGE 
 
-![Screenshot (689)](https://user-images.githubusercontent.com/74869287/130790075-0b1a47d1-0f69-4d30-8fab-cd1fbfd93ad2.png)
+![Screenshot (914)](https://user-images.githubusercontent.com/74869287/187036727-515485e8-0483-47ab-a4ae-13b6c52358a1.png)
 
 ### CART PAGE
 
-![Screenshot (690)](https://user-images.githubusercontent.com/74869287/130790055-80a4f933-2483-41a9-9373-378135ad43b2.png)
+![Screenshot (922)](https://user-images.githubusercontent.com/74869287/187036790-a19c19d8-77e0-4280-a2d9-ffbfeacf434c.png)
 
 ### REGISTRATION PAGES
 
-![Screenshot (687)](https://user-images.githubusercontent.com/74869287/130790152-befda7e5-50a6-42ea-9250-128f78b40c6f.png)
+![Screenshot (915)](https://user-images.githubusercontent.com/74869287/187036831-14363b74-cdf4-4aa6-a8d6-958f25703b62.png)
 
 ### LOGIN PAGE
 
-![Screenshot (688)](https://user-images.githubusercontent.com/74869287/130790105-dea4920e-77db-4b89-b472-ce4ec216631e.png)
-
-### ADDRESS AND OTHER DETAIL
-
-![Screenshot (686)](https://user-images.githubusercontent.com/74869287/130789519-fbbbad6d-fe0a-45b7-ba05-f248e6442798.png)
+![Screenshot (916)](https://user-images.githubusercontent.com/74869287/187036832-a292a554-53e8-4ec4-aac4-012e4e7d191a.png)
 
 ### ALL ORDER DETAILS
 
-![Screenshot (685)](https://user-images.githubusercontent.com/74869287/130789492-cfabe5db-7d0c-4a4f-846a-04e5f9e5898f.png)
+![Screenshot (923)](https://user-images.githubusercontent.com/74869287/187037064-be794897-2fc8-4d4d-8bf2-3492e165f7a6.png)
 
 ### TRACKING DETAILS OF ORDER
 
-![Screenshot (684)](https://user-images.githubusercontent.com/74869287/130789469-cfb1e9f0-bfd4-4ae3-baea-c76ceb3f9f99.png)
+![Screenshot (920)](https://user-images.githubusercontent.com/74869287/187037161-18c09d5b-dfc9-4889-b32a-d52ab81d22e5.png)
 
-### ADMIN PAGE 
-![Screenshot (692)](https://user-images.githubusercontent.com/74869287/130791176-46926f65-32ac-419c-a953-3a68ee2f9712.png)
+### ADMIN PAGE
 
-### ORDER UPDATION AT REAL TIME
-![Screenshot (691)](https://user-images.githubusercontent.com/74869287/130940735-25694e17-a54c-498e-a02c-f2f94c35b2dc.png)
-
+![Screenshot (921)](https://user-images.githubusercontent.com/74869287/187037213-d2bce2d4-66f7-43fe-8203-fe8b725086cc.png)
 
 ### MONGODB COLLECTION USED IN PROJECT
 
